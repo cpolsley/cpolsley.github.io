@@ -4,10 +4,10 @@ layout: page
 
 {{ content }}
 
-{% assign posts = paginator.posts | default: site.categories.home.posts %}
+{% assign posts = paginator.posts | default: site.categories.scifi.posts %}
 
 <div class="posts-list">
-  {% for post in site.categories.home %}
+  {% for post in site.categories.scifi %}
   <article class="post-preview">
     <a href="{{ post.url | absolute_url }}">
       <h2 class="post-title">{{ post.title }}</h2>
